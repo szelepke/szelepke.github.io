@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="dist/main.css" type="text/css" media="all">
+        
+        <title>Responsive Resume CV Zsolt Szelepcsényi</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Zsolt Szelepcsényi</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="bx bx-home nav__icon"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#profile" class="nav__link">
+                                <i class="bx bx-user nav__icon"></i>Profile
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#education" class="nav__link">
+                                <i class="bx bx-book nav__icon"></i>Education
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="bx bx-receipt nav__icon"></i>Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#experience" class="nav__link">
+                                <i class="bx bx-briefcase-alt nav__icon"></i>Experience
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#certificates" class="nav__link">
+                                <i class="bx bx-award nav__icon"></i>Certificates
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#references" class="nav__link">
+                                <i class="bx bx-link-external nav__icon"></i>References
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main bd-container">
+            <!-- All elements within this div, is generated in PDF -->
+            <div class="resume" id="area-cv">
+                <div class="resume__left">
+                    <!--========== HOME ==========-->
+                    <section class="home" id="home">
+                        <div class="home__container section bd-grid">
+                            <div class="home__data bd-grid">
+                                <img src="assets/img/perfil.jpg" alt="" class="home__img">
+                                <h1 class="home__title">Zsolt <b>Szelepcsényi</b></h1>
+                                <h3 class="home__profession">Web developer</h3>
+                                <h5 class="home__description">Frontend - Backend developer</h5>
+                                <div>
+                                    <a target=“_blank” download href="assets/pdf/zsolt_szelepcsenyi_resume_cv.pdf" class="home__button-movil">Download</a>
+                                </div>
+                            </div>
+                            <div class="home__address bd-grid">
+                                <span class="home__information">
+                                    <i class="bx bx-map home__icon"></i>Hungary 6723 Szeged
+                                </span>
+                                <span class="home__information">
+                                    <i class="bx bx-envelope home__icon"></i><a href="mailto:szelepcsenyi.zsolt@dstyledecor.hu">szelepcsenyi.zsolt@dstyledecor.hu</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+                        <a href="assets/pdf/zsolt_szelepcsenyi_resume_cv.pdf" download target=“_blank”><i class="bx bx-download generate-pdf" title="Download Resume CV Szelepcsenyi Zsolt" id="resume-button"></i></a>
+                    </section>          
+                    
+                    <!--========== SOCIAL ==========-->
+                    <section class="social section">
+                        <h2 class="section-title">Social</h2>
+                        <div class="social__container bd-grid">
+                            <a href="https://www.linkedin.com/in/zsolt-szelepcs%C3%A9nyi-811a511a2/" target="_blank" class="social__link">
+                                <i class="bx bxl-linkedin-square social__icon"></i>@zsolt-szelepcsenyi
+                            </a>
+                            <a href="https://github.com/szelepke/" target="_blank" class="social__link">
+                                <i class="bx bxl-github social__icon"></i>@szelepke
+                            </a>
+                            <a href="https://www.instagram.com/szelep_zs/" target="_blank" class="social__link">
+                                <i class="bx bxl-instagram social__icon"></i>@szelep_zs
+                            </a>
+                            <a href="https://twitter.com/szelepke/" target="_blank" class="social__link">
+                                <i class="bx bxl-twitter social__icon"></i>@szelepke
+                            </a>
+                        </div>
+                    </section>
+
+                    <!--========== PROFILE ==========-->
+                    <section class="profile section" id="profile">
+                        <h2 class="section-title">Profile</h2>
+                        <p class="profile__description">Experienced Javascript full stack developer, frontend preferred. Skilled in Javascript, Node.js, Git, CSS, HTML, Docker, Wordpress, PHP and framework (Yii2, Laravel), and component based frontend framework (Vue), and cross - platform mobile development (Flutter, Quasar).</p>
+                    </section>
+                    
+                    <!--========== EDUCATION ==========-->
+                    <section class="education section" id="education">
+                        <h2 class="section-title">Education</h2>
+                        <div class="edication__container bd-grid">
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">GEOGRAPHY (GEOINFORMATICS)</h3>
+                                    <a href="https://u-szeged.hu/english" target="_blank"><span class="education__studies">Unviersity of Szeged</span></a>
+                                    <span class="education__year">2011 - 2015</span>
+                                </div>
+                            </div>
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                </div>
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">SOFTWARE ENGINEERING</h3>
+                                    <a href="https://u-szeged.hu/english" target="_blank"><span class="education__studies">Unviersity of Szeged</span></a>
+                                    <span class="education__year">2015 - 2017</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--========== SKILLS  ==========-->
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">Skills</h2>
+                        <div class="skills__content bd-grid">
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> HTML
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> CSS
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> <a href="https://sass-lang.com/" target="_blank">Sass</a>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> JavaScript
+                                </li>
+								<li class="skills__name">
+                                    <span class="skills__circle"></span> <a href="https://flutter.dev/" target="_blank">Flutter</a>
+                                </li>
+                            </ul>
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> <a href="https://vuejs.org/" target="_blank">Vue.js</a>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> <a href="https://wordpress.com/" target="_blank">WordPress</a>
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> PHP
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> <a href="https://laravel.com/" target="_blank">Laravel</a>
+                                </li>
+								<li class="skills__name">
+                                    <span class="skills__circle"></span> <a href="https://www.yiiframework.com/" target="_blank">Yii2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                </div>
+
+                <div class="resume__right">
+                    <!--========== EXPERIENCE ==========-->
+                    <section class="experience section" id="experience">
+                        <h2 class="section-title">Experience</h2>
+                        <div class="experience__container bd-grid">
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Geoinformatics</h3>
+                                    <span class="experience__company">From 2015 to 2016 | <a href="https://geodezia-zrt.webnode.hu/" target="_blank">Geodezia Zrt</a></span>
+                                    <p class="experience__description">Geospatial data processing (CAD, GIS). Processing of utility (electricity, telecommunications) industrial data. Database management (.xlsx, .dbf, .mdb). Independent data analysis and data update tasks solution. Participation in research and development tasks. Carrying out measurements in the field.</p>
+                                </div>
+                            </div>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Frontend developer - Backend developer</h3>
+                                    <span class="experience__company">From 2017 to - | <a href="https://evista.hu/" target="_blank">Evista Kft.</a></span>
+                                    <p class="experience__description">As an experienced developer I preform complex tasks independently. I am also involved in backend and front end developkent ranging from webshops, websites to full-blown web applications. Additionally I create and document advanced REST APIs and integrate my own or third-party APIs. My work also includes optimizing existing Frontend backend systems and developing PHP (Laravel, Yii2) based microservices and Vue or Flutter microfrontend.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--========== CERTIFICATES ==========-->
+                    <section class="certificate section" id="certificates">
+                        <h2 class="section-title">Certificate</h2>
+                        <div class="certificate__container bd-grid">
+                            <div class="certificate__content">
+                                <h3 class="certificate__title">Civil drones (unmanned aircraft) certificate (2022)</h3>
+                                <p class="certificate__description">EU Regulations 2019/947 and 2019/945 set out the framework for the safe operation of civil drones in the European skies. They adopt a risk - based approach, and as such, do not distinguish between leisure or commercial civil drone activities.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--========== REFERENCES ==========-->
+                    <section class="references section" id="references">
+                        <h2 class="section-title">References</h2>
+                        <div class="references__container bd-grid">
+                            <div class="references__content bd-grid">
+                                <span class="references__subtitle">Managing Director</span>
+                                <h3 class="references__title">András Tóth</h3>
+                                <ul class="references__contact">
+                                    <li>Email: <a href="mailto:info@evista.hu">info@evista.hu</a></li>
+                                </ul>
+                            </div>
+                            <div class="references__content bd-grid">
+                                <span class="references__subtitle">Managing Director</span>
+                                <h3 class="references__title">Dániel Oláh</h3>
+                                <ul class="references__contact">
+                                    <li>Email: <a href="mailto:info@dstyledecor.hu">info@dstyledecor.hu</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--========== LANGUAGES ==========-->
+                    <section class="languages section">
+                        <h2 class="section-title">Languages</h2>
+                        <div class="languages__container">
+                            <ul class="languages__content bd-grid">
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> Hungary
+                                </li>
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> English
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    
+                    <!--========== INTERESTS ==========-->
+                    <section class="interests section">
+                        <h2 class="section-title">Interests</h2>
+                        <div class="interests__container bd-grid">
+                            <div class="interests__content">
+                                <i class="bx bx-headphone interests__icon"></i>
+                                <span class="interests__name">Music</span>
+                            </div>
+                            <div class="interests__content">
+                                <i class="bx bxs-plane-alt interests__icon"></i>
+                                <span class="interests__name">Travel</span>
+                            </div>
+                            <div class="interests__content">
+                                <i class="bx bx-book interests__icon"></i>
+                                <span class="interests__name">Read</span>
+                            </div>
+                            <div class="interests__content">
+                                <i class="bx bx-run interests__icon"></i>
+                                <span class="interests__name">Running</span>
+                            </div>
+							<div class="interests__content">
+                                <i class="bx bx-vector interests__icon"></i>
+                                <span class="interests__name">Drone</span>
+                            </div>
+							<div class="interests__content">
+                                <i class="bx bx-trip interests__icon"></i>
+                                <span class="interests__name">Trip</span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="qrcode section">
+                        <a id="qr_code"></a>
+                    </section>
+                </div>
+            </div>        
+        </main>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+        </a>
+        <span class="copyright-text">Copyright © 2022<a href="https://github.com/szelepke/" target="_blank">&nbsp;Zsolt Szelepcsényi&nbsp;</a> all rights reserved</span>
+        <script src="dist/main.js"></script>
+    </body>
+</html>
