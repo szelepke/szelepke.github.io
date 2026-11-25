@@ -1,8 +1,8 @@
 # Zsolt Szelepcsényi - Full Stack Developer
 
-> Personal CV site of Zsolt Szelepcsényi, a full stack developer from Szeged, Hungary, with 9+ years of experience building web applications, SaaS platforms and business systems. Currently a Full Stack Developer at Aventail (since April 2026). The site is available in English and Hungarian.
+> Personal CV site of Zsolt Szelepcsényi (Hungarian name order: Szelepcsényi Zsolt), a full stack developer from Szeged, Hungary, with 9+ years of experience building web applications, SaaS platforms and business systems. Currently a Full Stack Developer at Aventail (since April 2026). The site is available in English and Hungarian; a Hungarian summary follows the English one below.
 
-Frontend-leaning, but comfortable across the whole stack: React, Next.js and Vue on the client; Node.js, Nest.js, GraphQL, Laravel and Yii2 on the server; Docker, Azure and Cloudflare for delivery; React Native and Flutter for mobile.
+Frontend-leaning, but comfortable across the whole stack: React, Next.js and Vue on the client; Node.js, Nest.js, GraphQL, Laravel and Yii2 on the server; Docker, Azure and Cloudflare for delivery; React Native and Flutter for mobile. Cares about clean interfaces, maintainable code and shipping things that work.
 
 - Location: Szeged, Hungary
 - Email: szelepcsenyi.zsolt@gmail.com
@@ -22,21 +22,67 @@ Frontend-leaning, but comfortable across the whole stack: React, Next.js and Vue
 - [LinkedIn](https://www.linkedin.com/in/zsolt-szelepcs%C3%A9nyi-811a511a2/)
 - [GitHub](https://github.com/szelepke)
 
+## Skills
+
+- Frontend: React, Next.js, Vue.js, JavaScript, HTML, CSS, Sass, Vite, Parcel
+- Backend: Node.js, Nest.js, GraphQL, PostgreSQL, Prisma, PHP, Laravel, Yii2, WordPress, Supabase
+- Mobile: React Native, Flutter
+- Cloud & DevOps: Azure, Cloudflare, Firebase, Docker, Git
+
 ## Experience
 
-- Full Stack Developer, Aventail (Apr 2026 - present): custom business systems (CRM, ERP, B2B) end to end, from system design and integrations to the UI
-- Frontend - Backend Developer, Evista Kft. (2017 - 2026): webshops, websites and web applications; REST APIs, Laravel / Yii2 microservices, React and Vue micro-frontends, Flutter apps
-- Geoinformatics, Geodézia Zrt. (2015 - 2016): CAD / GIS processing of utility network data
+- Full Stack Developer, Aventail (Apr 2026 - present): custom business systems (CRM, ERP, B2B and high-traffic web solutions) for clients across Hungary and the EU, end to end from system design and third-party integrations through APIs to the user interface
+- Frontend - Backend Developer, Evista Kft. (2017 - 2026): webshops, websites and full web applications; designed and documented REST APIs, built PHP (Laravel, Yii2) microservices, React and Vue micro-frontends and Flutter cross-platform mobile apps
+- Geoinformatics, Geodézia Zrt. (2015 - 2016): CAD / GIS processing of utility network data, database management, data analysis, R&D work and field measurements
 
 ## Selected projects
 
-- Agropark (2026 - present): unified marketing, CRM and lead tracking platform for an agricultural machinery dealer
-- Compera (2024 - 2026): supply chain sustainability reporting platform; Next.js frontend, Nest.js / GraphQL backend
-- IndyKite Loyalty App (2023 - 2024): loyalty network demo with Google Sign-In, e-commerce flow and payments
-- ChainFlow CRM (2022 - 2023): process-driven CRM with document generation; Laravel and JavaScript
-- Podiart (2021 - 2026): medical desktop app rebuilt as a browser-based PHP / Yii2 system for foot analysis and custom insoles
-- Trend Auto Szeged (2022 - 2023): UI/UX design and development of a used car dealership site
+- Agropark (2026 - present): unified marketing, CRM and lead tracking platform for a dealer of agricultural and construction machinery
+- Compera (2024 - 2026): supply chain sustainability reporting platform; owned the Next.js frontend and contributed to the Nest.js / GraphQL backend, from concept to MVP
+- IndyKite Loyalty App (2023 - 2024): loyalty network demo on IndyKite's identity platform, with Google Sign-In, invite codes, an e-commerce flow with online payments and admin tools
+- ChainFlow CRM (2022 - 2023): process-driven CRM with document generation; Laravel backend, JavaScript frontend, data tables for nearly 9,000 products
+- Podiart (2021 - 2026): medical desktop app rebuilt as a browser-based PHP / Yii2 system for instrumental foot analysis, 3D modelling and custom orthopedic insoles
+- Trend Auto Szeged (2022 - 2023): UI/UX design and development of hasznaltautoszegeden.hu for a family-owned used car dealership
+
+## Education and certificates
+
+- Software Engineering, University of Szeged (2015 - 2017)
+- Geography (Geoinformatics), University of Szeged (2011 - 2015)
+- EU civil drone (UAS) certificate (2022), under EU Regulations 2019/947 and 2019/945
+
+## Magyarul
+
+Szelepcsényi Zsolt szegedi full stack fejlesztő, több mint 9 év tapasztalattal webalkalmazások fejlesztésében, a webshopoktól és céges oldalaktól a SaaS platformokig és összetett üzleti rendszerekig. 2026 áprilisa óta az Aventail full stack fejlesztője. Leginkább a frontend áll közel hozzá, de a teljes stacken otthon van: kliensoldalon React, Next.js és Vue, szerveroldalon Node.js, Nest.js, GraphQL, Laravel és Yii2, az üzemeltetéshez Docker, Azure és Cloudflare, mobilra pedig React Native és Flutter.
+
+- Helyszín: Szeged, Magyarország
+- E-mail: szelepcsenyi.zsolt@gmail.com
+- Nyelvek: magyar (anyanyelv), angol (szakmai szint)
+- [Online önéletrajz magyarul](https://szelepke.github.io/?lang=hu)
+- [Önéletrajz PDF (magyar)](https://szelepke.github.io/assets/pdf/szelepcsenyi_zsolt_oneletrajz.pdf)
+- [Digitális névjegykártya](https://szelepke.github.io/card/)
+
+### Szakmai tapasztalat
+
+- Full stack fejlesztő, Aventail (2026. ápr. - jelenleg): egyedi üzleti rendszerek (CRM, ERP, B2B és nagy forgalmú webes megoldások) fejlesztése magyarországi és EU-s ügyfeleknek, a rendszertervezéstől és a külső integrációktól az API-kon át a felhasználói felületig
+- Frontend - backend fejlesztő, Evista Kft. (2017 - 2026): webshopok, weboldalak és komplett webalkalmazások; REST API-k tervezése és dokumentálása, PHP (Laravel, Yii2) mikroszolgáltatások, React és Vue mikrofrontendek, Flutter mobilalkalmazások
+- Geoinformatikus, Geodézia Zrt. (2015 - 2016): közműhálózati adatok térinformatikai feldolgozása (CAD, GIS), adatbázis-kezelés, adatelemzés, kutatás-fejlesztés és terepi mérések
+
+### Kiemelt projektek
+
+- Agropark (2026 - jelenleg): egységes marketing-, CRM- és lead-követő rendszer egy mezőgazdasági és építőipari gépeket forgalmazó cégnek
+- Compera (2024 - 2026): fenntarthatósági jelentéskészítő platform a teljes ellátási láncra; Next.js frontend, Nest.js / GraphQL backend, a koncepciótól az MVP-ig
+- IndyKite Loyalty App (2023 - 2024): hűségprogram-demó az IndyKite identitásplatformjára, Google-bejelentkezéssel, webshopfolyamattal, online fizetéssel és adminfelülettel
+- ChainFlow CRM (2022 - 2023): folyamatvezérelt CRM dokumentumgenerálással; Laravel backend, JavaScript frontend, közel 9000 termék kezelése
+- Podiart (2021 - 2026): orvosi asztali alkalmazás átültetése böngészőalapú PHP / Yii2 rendszerré lábvizsgálathoz, 3D modellezéshez és egyedi ortopédiai talpbetétekhez
+- Trend Auto Szeged (2022 - 2023): a hasznaltautoszegeden.hu UI/UX tervezése és fejlesztése
+
+### Tanulmányok és tanúsítványok
+
+- Szoftverfejlesztés, Szegedi Tudományegyetem (2015 - 2017)
+- Földrajz (geoinformatika), Szegedi Tudományegyetem (2011 - 2015)
+- EU polgári drón (UAS) tanúsítvány (2022)
 
 ## Optional
 
+- [Agentic Resource Discovery manifest](https://szelepke.github.io/.well-known/ard.json)
 - [Sitemap](https://szelepke.github.io/sitemap.xml)

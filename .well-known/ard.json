@@ -1,0 +1,73 @@
+{
+  "entries": [
+    {
+      "identifier": "urn:air:szelepke.github.io:cv:online-cv",
+      "displayName": "Zsolt Szelepcsényi - Online CV",
+      "type": "text/html",
+      "url": "https://szelepke.github.io/",
+      "description": "Online CV of Zsolt Szelepcsényi, full stack developer from Szeged, Hungary: profile, skills, experience, projects and education. Available in English (?lang=en) and Hungarian (?lang=hu).",
+      "tags": ["cv", "resume", "full stack developer", "react", "next.js", "node.js", "laravel", "szeged", "hungary"],
+      "representativeQueries": [
+        "Zsolt Szelepcsényi CV",
+        "full stack developer in Szeged, Hungary",
+        "React and Node.js developer resume",
+        "Szelepcsényi Zsolt önéletrajz"
+      ]
+    },
+    {
+      "identifier": "urn:air:szelepke.github.io:cv:llms-txt",
+      "displayName": "Zsolt Szelepcsényi - CV summary for LLMs",
+      "type": "text/markdown",
+      "url": "https://szelepke.github.io/llms.txt",
+      "description": "Markdown summary of the CV in English and Hungarian (llms.txt), with links to every other resource on the site.",
+      "representativeQueries": [
+        "Zsolt Szelepcsényi experience and skills summary",
+        "what projects has Zsolt Szelepcsényi worked on"
+      ]
+    },
+    {
+      "identifier": "urn:air:szelepke.github.io:cv:resume-pdf-en",
+      "displayName": "Zsolt Szelepcsényi - Resume (PDF, English)",
+      "type": "application/pdf",
+      "url": "https://szelepke.github.io/assets/pdf/zsolt_szelepcsenyi_resume_cv.pdf",
+      "description": "Downloadable English resume of Zsolt Szelepcsényi.",
+      "representativeQueries": [
+        "download Zsolt Szelepcsényi resume PDF",
+        "Zsolt Szelepcsényi CV in English"
+      ]
+    },
+    {
+      "identifier": "urn:air:szelepke.github.io:cv:resume-pdf-hu",
+      "displayName": "Szelepcsényi Zsolt - Önéletrajz (PDF, magyar)",
+      "type": "application/pdf",
+      "url": "https://szelepke.github.io/assets/pdf/szelepcsenyi_zsolt_oneletrajz.pdf",
+      "description": "Downloadable Hungarian resume (önéletrajz) of Zsolt Szelepcsényi.",
+      "representativeQueries": [
+        "Szelepcsényi Zsolt önéletrajz letöltése",
+        "Zsolt Szelepcsényi CV in Hungarian"
+      ]
+    },
+    {
+      "identifier": "urn:air:szelepke.github.io:contact:business-card",
+      "displayName": "Zsolt Szelepcsényi - Digital business card",
+      "type": "text/html",
+      "url": "https://szelepke.github.io/card/",
+      "description": "Digital business card with email, LinkedIn and GitHub links and a QR code to save the contact.",
+      "representativeQueries": [
+        "how to contact Zsolt Szelepcsényi",
+        "Zsolt Szelepcsényi email and LinkedIn"
+      ]
+    },
+    {
+      "identifier": "urn:air:szelepke.github.io:contact:vcard",
+      "displayName": "Zsolt Szelepcsényi - vCard",
+      "type": "text/vcard",
+      "url": "https://szelepke.github.io/zsolt_szelepcsenyi.vcf",
+      "description": "Contact file (vCard 3.0) to import into an address book.",
+      "representativeQueries": [
+        "add Zsolt Szelepcsényi to contacts",
+        "Zsolt Szelepcsényi vCard"
+      ]
+    }
+  ]
+}
