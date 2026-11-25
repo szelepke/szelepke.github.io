@@ -2,6 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://szelepke.github.io/sitemap.xml
-
-# Agentic Resource Discovery manifest
-Agentmap: https://szelepke.github.io/.well-known/ard.json
