@@ -1,0 +1,42 @@
+# Zsolt Szelepcsényi - Full Stack Developer
+
+> Personal CV site of Zsolt Szelepcsényi, a full stack developer from Szeged, Hungary, with 9+ years of experience building web applications, SaaS platforms and business systems. Currently a Full Stack Developer at Aventail (since April 2026). The site is available in English and Hungarian.
+
+Frontend-leaning, but comfortable across the whole stack: React, Next.js and Vue on the client; Node.js, Nest.js, GraphQL, Laravel and Yii2 on the server; Docker, Azure and Cloudflare for delivery; React Native and Flutter for mobile.
+
+- Location: Szeged, Hungary
+- Email: szelepcsenyi.zsolt@gmail.com
+- Languages: Hungarian (native), English (professional)
+
+## CV
+
+- [Online CV (English)](https://szelepke.github.io/?lang=en): profile, skills, experience, projects, education and certificates
+- [Online CV (Hungarian)](https://szelepke.github.io/?lang=hu): the same content in Hungarian
+- [Resume PDF (English)](https://szelepke.github.io/assets/pdf/zsolt_szelepcsenyi_resume_cv.pdf)
+- [Önéletrajz PDF (Hungarian)](https://szelepke.github.io/assets/pdf/szelepcsenyi_zsolt_oneletrajz.pdf)
+
+## Contact
+
+- [Digital business card](https://szelepke.github.io/card/): contact details with a QR code
+- [vCard](https://szelepke.github.io/zsolt_szelepcsenyi.vcf): contact file to import into an address book
+- [LinkedIn](https://www.linkedin.com/in/zsolt-szelepcs%C3%A9nyi-811a511a2/)
+- [GitHub](https://github.com/szelepke)
+
+## Experience
+
+- Full Stack Developer, Aventail (Apr 2026 - present): custom business systems (CRM, ERP, B2B) end to end, from system design and integrations to the UI
+- Frontend - Backend Developer, Evista Kft. (2017 - 2026): webshops, websites and web applications; REST APIs, Laravel / Yii2 microservices, React and Vue micro-frontends, Flutter apps
+- Geoinformatics, Geodézia Zrt. (2015 - 2016): CAD / GIS processing of utility network data
+
+## Selected projects
+
+- Agropark (2026 - present): unified marketing, CRM and lead tracking platform for an agricultural machinery dealer
+- Compera (2024 - 2026): supply chain sustainability reporting platform; Next.js frontend, Nest.js / GraphQL backend
+- IndyKite Loyalty App (2023 - 2024): loyalty network demo with Google Sign-In, e-commerce flow and payments
+- ChainFlow CRM (2022 - 2023): process-driven CRM with document generation; Laravel and JavaScript
+- Podiart (2021 - 2026): medical desktop app rebuilt as a browser-based PHP / Yii2 system for foot analysis and custom insoles
+- Trend Auto Szeged (2022 - 2023): UI/UX design and development of a used car dealership site
+
+## Optional
+
+- [Sitemap](https://szelepke.github.io/sitemap.xml)
