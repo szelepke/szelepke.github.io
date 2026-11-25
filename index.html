@@ -1,335 +1,417 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Zsolt Szelepcsenyi">
-        <meta name="keywords" content="Frontend, Backend, Webdeveloper, Developer">
-        <meta name="description" content="I am in backend and frontend development ranging from webshops, websites to full-blown web applications.">
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-        <link rel="stylesheet" href="dist/main.css" type="text/css" media="all">
-        <title>Responsive Resume CV Zsolt Szelepcsényi</title>
-        <meta name="google-site-verification" content="MTswuMb0_I3GBO1fKCb8QfH3PyRrrsH82hzp8aD5PAE" />
-        <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="assets/img/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-    </head>
-    <body>
-        <header class="l-header" id="header">
-            <nav class="nav bd-container">
-                <a href="#home" class="nav__logo">Zsolt Szelepcsényi</a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">
-                                <i class="ri-home-8-line nav__icon"></i>Home
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zsolt Szelepcsényi - Full Stack Developer</title>
+    <meta name="author" content="Zsolt Szelepcsényi">
+    <meta name="description" content="Full stack developer from Szeged, Hungary. 9+ years building web applications, SaaS platforms and business systems with React, Next.js, Vue, Node.js, Nest.js, Laravel and Yii2.">
+    <meta name="keywords" content="Full Stack Developer, Frontend, Backend, React, Next.js, Vue, Node.js, Nest.js, Laravel, Szeged">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="google-site-verification" content="MTswuMb0_I3GBO1fKCb8QfH3PyRrrsH82hzp8aD5PAE" />
+    <link rel="canonical" href="https://szelepke.github.io/">
+    <link rel="alternate" hreflang="en" href="https://szelepke.github.io/?lang=en">
+    <link rel="alternate" hreflang="hu" href="https://szelepke.github.io/?lang=hu">
+    <link rel="alternate" hreflang="x-default" href="https://szelepke.github.io/">
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Zsolt Szelepcsényi - Full Stack Developer">
+    <meta property="og:description" content="Full stack developer building web applications, SaaS platforms and business systems.">
+    <meta property="og:url" content="https://szelepke.github.io/">
+    <meta property="og:image" content="https://szelepke.github.io/assets/img/zsolt_szelepcsenyi.webp">
+    <meta name="twitter:card" content="summary">
+
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+
+    <!-- Apply the saved theme before first paint to avoid a flash -->
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('selected-theme');
+                var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+                document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+        (function () {
+            var lang = 'en';
+            try {
+                var q = new URLSearchParams(location.search).get('lang');
+                var saved = localStorage.getItem('lang');
+                var nav = (navigator.languages || [navigator.language || '']).join(',').toLowerCase();
+                lang = q === 'hu' || q === 'en' ? q : saved === 'hu' || saved === 'en' ? saved : /(^|,)hu/.test(nav) ? 'hu' : 'en';
+            } catch (e) {}
+            if (lang === 'hu') {
+                document.documentElement.lang = 'hu';
+                document.documentElement.classList.add('i18n-pending');
+                // Safety net: never keep the page hidden if the bundle fails to load
+                setTimeout(function () { document.documentElement.classList.remove('i18n-pending'); }, 1500);
+            }
+        })();
+    </script>
+
+    <link rel="stylesheet" href="dist/main.css" type="text/css" media="all">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Zsolt Szelepcsényi",
+        "jobTitle": "Full Stack Developer",
+        "worksFor": { "@type": "Organization", "name": "Aventail", "url": "https://www.aventail.hu/" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Szeged", "addressCountry": "HU" },
+        "email": "mailto:szelepcsenyi.zsolt@gmail.com",
+        "url": "https://szelepke.github.io/",
+        "sameAs": [
+            "https://www.linkedin.com/in/zsolt-szelepcs%C3%A9nyi-811a511a2/",
+            "https://github.com/szelepke/"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!--========== HEADER (mobile bottom bar) ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container" aria-label="Sections" data-i18n-attr="aria-label:nav.aria">
+            <a href="#home" class="nav__logo" data-i18n="footer.name">Zsolt Szelepcsényi</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link"><i class="ri-home-5-line nav__icon" aria-hidden="true"></i><span data-i18n="nav.home">Home</span></a></li>
+                    <li class="nav__item"><a href="#profile" class="nav__link"><i class="ri-user-3-line nav__icon" aria-hidden="true"></i><span data-i18n="nav.profile">Profile</span></a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link"><i class="ri-briefcase-4-line nav__icon" aria-hidden="true"></i><span data-i18n="nav.experience">Experience</span></a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link"><i class="ri-stack-line nav__icon" aria-hidden="true"></i><span data-i18n="nav.projects">Projects</span></a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link"><i class="ri-code-s-slash-line nav__icon" aria-hidden="true"></i><span data-i18n="nav.skills">Skills</span></a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link"><i class="ri-graduation-cap-line nav__icon" aria-hidden="true"></i><span data-i18n="nav.education">Education</span></a></li>
+                    <li class="nav__item"><a href="#certificates" class="nav__link"><i class="ri-award-line nav__icon" aria-hidden="true"></i><span data-i18n="nav.certificates">Certificates</span></a></li>
+                    <li class="nav__item"><a href="#interests" class="nav__link"><i class="ri-compass-3-line nav__icon" aria-hidden="true"></i><span data-i18n="nav.interests">Interests</span></a></li>
+                </ul>
+            </div>
+            <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container" id="main">
+        <div class="resume" id="area-cv">
+            <!--========== LEFT COLUMN ==========-->
+            <div class="resume__left">
+                <div class="resume__sticky" id="resume-sticky">
+                <!--========== HOME ==========-->
+                <section class="home" id="home">
+                    <div class="home__toolbar">
+                        <a href="assets/pdf/zsolt_szelepcsenyi_resume_cv.pdf" download class="icon-button" aria-label="Download resume (PDF)" data-tooltip="Download PDF" data-i18n-attr="href:pdf.href,aria-label:toolbar.downloadAria,data-tooltip:toolbar.download">
+                            <i class="ri-download-2-line" aria-hidden="true"></i>
+                        </a>
+                        <a href="card/" class="icon-button" aria-label="Digital business card" data-tooltip="Business card" data-i18n-attr="aria-label:toolbar.cardAria,data-tooltip:toolbar.card">
+                            <i class="ri-contacts-book-2-line" aria-hidden="true"></i>
+                        </a>
+                        <button type="button" class="icon-button theme-toggle" id="theme-button" aria-label="Toggle dark mode" data-tooltip="Theme" data-i18n-attr="aria-label:toolbar.themeAria,data-tooltip:toolbar.theme">
+                            <i class="ri-moon-line theme-toggle__moon" aria-hidden="true"></i>
+                            <i class="ri-sun-line theme-toggle__sun" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="icon-button lang-toggle" id="lang-button" aria-label="Magyar nyelvű változat" data-tooltip="Magyar">
+                            <span class="lang-toggle__label" lang="hu">HU</span>
+                        </button>
+                    </div>
+
+                    <div class="home__container section">
+                        <div class="home__data">
+                            <div class="home__avatar" data-hero style="--i:0">
+                                <img src="assets/img/zsolt_szelepcsenyi.webp" alt="Portrait of Zsolt Szelepcsényi" data-i18n-attr="alt:home.alt" class="home__img" width="120" height="120">
+                                <span class="home__status" title="Currently at Aventail" data-i18n-attr="title:home.status" aria-hidden="true"></span>
+                            </div>
+                            <h1 class="home__title" data-hero style="--i:1" data-i18n-html="home.name">Zsolt <b>Szelepcsényi</b></h1>
+                            <p class="home__profession" data-hero style="--i:2" data-i18n="home.profession">Full Stack Developer</p>
+                            <p class="home__description" data-hero style="--i:3">
+                                <span class="home__now"><span class="pulse-dot" aria-hidden="true"></span><span data-i18n-html="home.now">Now at <a href="https://www.aventail.hu/" target="_blank" rel="noopener" class="link">Aventail</a></span></span>
+                            </p>
+                            <a href="assets/pdf/zsolt_szelepcsenyi_resume_cv.pdf" download class="button home__button-mobile" data-i18n-attr="href:pdf.href" data-hero style="--i:4">
+                                <i class="ri-download-2-line" aria-hidden="true"></i> <span data-i18n="home.downloadCv">Download CV</span>
                             </a>
+                        </div>
+
+                        <ul class="home__address" data-hero style="--i:5">
+                            <li class="home__information">
+                                <i class="ri-map-pin-2-line home__icon" aria-hidden="true"></i><span data-i18n="home.location">Szeged, Hungary</span>
+                            </li>
+                            <li class="home__information">
+                                <i class="ri-mail-line home__icon" aria-hidden="true"></i>
+                                <a href="mailto:szelepcsenyi.zsolt@gmail.com" class="link">szelepcsenyi.zsolt@gmail.com</a>
+                                <button type="button" class="copy-button" data-copy="szelepcsenyi.zsolt@gmail.com" aria-label="Copy email address" data-i18n-attr="aria-label:home.copyAria">
+                                    <i class="ri-file-copy-line copy-button__icon" aria-hidden="true"></i>
+                                    <i class="ri-check-line copy-button__done" aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li class="home__information">
+                                <i class="ri-linkedin-box-line home__icon" aria-hidden="true"></i>
+                                <a href="https://www.linkedin.com/in/zsolt-szelepcs%C3%A9nyi-811a511a2/" target="_blank" rel="noopener" class="link">zsolt-szelepcsenyi</a>
+                            </li>
+                            <li class="home__information">
+                                <i class="ri-github-line home__icon" aria-hidden="true"></i>
+                                <a href="https://github.com/szelepke/" target="_blank" rel="noopener" class="link">szelepke</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title" data-reveal data-i18n="section.profile">Profile</h2>
+                    <p class="profile__description" data-reveal data-i18n="profile.text">
+                        Full stack developer with 9+ years of experience building web applications - from webshops and company sites to SaaS platforms and complex business systems. Frontend-leaning, but comfortable across the whole stack: React, Next.js and Vue on the client; Node.js, Nest.js, GraphQL, Laravel and Yii2 on the server; Docker, Azure and Cloudflare for delivery; React Native and Flutter for mobile. I care about clean interfaces, maintainable code and shipping things that work.
+                    </p>
+                </section>
+
+                <!--========== SKILLS ==========-->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title" data-reveal data-i18n="section.skills">Skills</h2>
+                    <div class="skills__group" data-reveal>
+                        <h3 class="skills__label">Frontend</h3>
+                        <ul class="chips">
+                            <li class="chip"><a href="https://react.dev/" target="_blank" rel="noopener">React</a></li>
+                            <li class="chip"><a href="https://nextjs.org/" target="_blank" rel="noopener">Next.js</a></li>
+                            <li class="chip"><a href="https://vuejs.org/" target="_blank" rel="noopener">Vue.js</a></li>
+                            <li class="chip">JavaScript</li>
+                            <li class="chip">HTML</li>
+                            <li class="chip">CSS</li>
+                            <li class="chip"><a href="https://sass-lang.com/" target="_blank" rel="noopener">Sass</a></li>
+                            <li class="chip"><a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a></li>
+                            <li class="chip"><a href="https://parceljs.org/" target="_blank" rel="noopener">Parcel</a></li>
+                        </ul>
+                    </div>
+                    <div class="skills__group" data-reveal>
+                        <h3 class="skills__label">Backend</h3>
+                        <ul class="chips">
+                            <li class="chip"><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></li>
+                            <li class="chip"><a href="https://nestjs.com/" target="_blank" rel="noopener">Nest.js</a></li>
+                            <li class="chip">GraphQL</li>
+                            <li class="chip"><a href="https://www.postgresql.org/" target="_blank" rel="noopener">PostgreSQL</a></li>
+                            <li class="chip"><a href="https://www.prisma.io/" target="_blank" rel="noopener">Prisma</a></li>
+                            <li class="chip">PHP</li>
+                            <li class="chip"><a href="https://laravel.com/" target="_blank" rel="noopener">Laravel</a></li>
+                            <li class="chip"><a href="https://www.yiiframework.com/" target="_blank" rel="noopener">Yii2</a></li>
+                            <li class="chip"><a href="https://wordpress.org/" target="_blank" rel="noopener">WordPress</a></li>
+                            <li class="chip"><a href="https://supabase.com/" target="_blank" rel="noopener">Supabase</a></li>
+                        </ul>
+                    </div>
+                    <div class="skills__group" data-reveal>
+                        <h3 class="skills__label" data-i18n="skills.mobile">Mobile</h3>
+                        <ul class="chips">
+                            <li class="chip"><a href="https://reactnative.dev/" target="_blank" rel="noopener">React Native</a></li>
+                            <li class="chip"><a href="https://flutter.dev/" target="_blank" rel="noopener">Flutter</a></li>
+                        </ul>
+                    </div>
+                    <div class="skills__group" data-reveal>
+                        <h3 class="skills__label" data-i18n="skills.cloud">Cloud &amp; DevOps</h3>
+                        <ul class="chips">
+                            <li class="chip"><a href="https://azure.microsoft.com/" target="_blank" rel="noopener">Azure</a></li>
+                            <li class="chip"><a href="https://www.cloudflare.com/" target="_blank" rel="noopener">Cloudflare</a></li>
+                            <li class="chip"><a href="https://firebase.google.com/" target="_blank" rel="noopener">Firebase</a></li>
+                            <li class="chip"><a href="https://www.docker.com/" target="_blank" rel="noopener">Docker</a></li>
+                            <li class="chip">Git</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!--========== EDUCATION ==========-->
+                <section class="education section" id="education">
+                    <h2 class="section-title" data-reveal data-i18n="section.education">Education</h2>
+                    <ol class="timeline timeline--compact">
+                        <li class="timeline__item" data-reveal>
+                            <span class="timeline__dot" aria-hidden="true"></span>
+                            <h3 class="timeline__title" data-i18n="edu.se.title">Software Engineering</h3>
+                            <p class="timeline__meta"><a href="https://u-szeged.hu/english" target="_blank" rel="noopener" class="link" data-i18n="edu.uni" data-i18n-attr="href:edu.uniHref">University of Szeged</a></p>
+                            <p class="timeline__date">2015 – 2017</p>
                         </li>
-                        <li class="nav__item">
-                            <a href="#profile" class="nav__link">
-                                <i class="ri-user-3-line nav__icon"></i>Profile
-                            </a>
+                        <li class="timeline__item" data-reveal>
+                            <span class="timeline__dot" aria-hidden="true"></span>
+                            <h3 class="timeline__title" data-i18n="edu.geo.title">Geography (Geoinformatics)</h3>
+                            <p class="timeline__meta"><a href="https://u-szeged.hu/english" target="_blank" rel="noopener" class="link" data-i18n="edu.uni" data-i18n-attr="href:edu.uniHref">University of Szeged</a></p>
+                            <p class="timeline__date">2011 – 2015</p>
                         </li>
-                        <li class="nav__item">
-                            <a href="#education" class="nav__link">
-                                <i class="ri-book-2-line nav__icon"></i>Education
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="ri-file-list-3-line nav__icon"></i>Skills
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#experience" class="nav__link">
-                                <i class="ri-briefcase-3-line nav__icon"></i>Experience
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#projects" class="nav__link">
-                                <i class="ri-computer-line nav__icon"></i>Projects
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#certificates" class="nav__link">
-                                <i class="ri-award-line nav__icon"></i>Certificates
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#interests" class="nav__link">
-                                <i class="ri-plug-2-line nav__icon"></i>Interests
-                            </a>
-                        </li>
+                    </ol>
+                </section>
+
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section">
+                    <h2 class="section-title" data-reveal data-i18n="section.languages">Languages</h2>
+                    <ul class="languages__list" data-reveal>
+                        <li class="languages__item"><span data-i18n="lang.hu">Hungarian</span><span class="languages__level" data-i18n="lang.native">Native</span></li>
+                        <li class="languages__item"><span data-i18n="lang.en">English</span><span class="languages__level" data-i18n="lang.professional">Professional</span></li>
                     </ul>
+                </section>
                 </div>
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-4-line"></i>
-                </div>
-            </nav>
-        </header>
-        <main class="l-main bd-container">
-            <div class="resume" id="area-cv">
-                <div class="resume__left">
-                    <section class="home" id="home">
-                        <div class="home__container section bd-grid">
-                            <div class="home__data bd-grid">
-                                <img src="assets/img/zsolt_szelepcsenyi.webp" alt="Zsolt Szelepcsenyi" class="home__img" width="120" height="120">
-                                <h1 class="home__title">Zsolt <b>Szelepcsényi</b></h1>
-                                <h2 class="home__profession">Web developer</h2>
-                                <h3 class="home__description">Frontend - Backend developer</h3>
-                                <div>
-                                    <a target="_blank" download href="assets/pdf/zsolt_szelepcsenyi_resume_cv.pdf" class="home__button-movil" aria-label="Download">Download</a>
-                                </div>
+            </div>
+
+            <!--========== RIGHT COLUMN ==========-->
+            <div class="resume__right">
+                <!--========== EXPERIENCE ==========-->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title" data-reveal data-i18n="section.experience">Experience</h2>
+                    <ol class="timeline">
+                        <li class="timeline__item timeline__item--current" data-reveal>
+                            <span class="timeline__dot" aria-hidden="true"></span>
+                            <div class="timeline__head">
+                                <h3 class="timeline__title" data-i18n="exp.aventail.title">Full Stack Developer</h3>
+                                <span class="badge"><span class="pulse-dot" aria-hidden="true"></span><span data-i18n="exp.current">Current</span></span>
                             </div>
-                            <div class="home__address bd-grid">
-                                <span class="home__information">
-                                    <i class="ri-map-pin-line home__icon"></i>Hungary 6723 Szeged
-                                </span>
-                                <span class="home__information">
-                                    <i class="ri-mail-line home__icon"></i><a href="mailto:szelepcsenyi.zsolt@gmail.com">szelepcsenyi.zsolt@gmail.com</a>
-                                </span>
-                                <span class="home__information">
-                                    <a href="https://www.linkedin.com/in/zsolt-szelepcs%C3%A9nyi-811a511a2/" target="_blank" class="social__link">
-                                        <i class="ri-linkedin-box-fill social__icon"></i>@zsolt-szelepcsenyi
-                                    </a>
-                                </span>
-                                <span class="home__information">
-                                    <a href="https://github.com/szelepke/" target="_blank" class="social__link">
-                                        <i class="ri-github-fill social__icon"></i>@szelepke
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                        <i class="ri-moon-line change-theme" title="Theme change" id="theme-button"></i>
-                        <a href="assets/pdf/zsolt_szelepcsenyi_resume_cv.pdf" download target="_blank" aria-label="Download Resume CV Zsolt Szelepcsenyi"><i class="ri-download-2-line generate-pdf" title="Download Resume CV Zsolt Szelepcsenyi" id="resume-button"></i></a>
-                    </section>
-                    <section class="profile section" id="profile">
-                        <h2 class="section-title">Profile</h2>
-                        <p class="profile__description">Experienced Javascript full stack developer, frontend preferred. Skilled in Javascript, Node.js, Git, CSS, HTML, Docker, Wordpress, PHP and framework (Yii2, Laravel), and component based frontend framework (React, Vue), and cross - platform mobile development (Flutter).</p>
-                    </section>
-                    <section class="education section" id="education">
-                        <h2 class="section-title">Education</h2>
-                        <div class="edication__container bd-grid">
-                            <div class="education__content">
-                                <div class="education__time">
-                                    <span class="education__rounder"></span>
-                                    <span class="education__line"></span>
-                                </div>
-                                <div class="education__data bd-grid">
-                                    <h3 class="education__title">SOFTWARE ENGINEERING</h3>
-                                    <a href="https://u-szeged.hu/english" target="_blank" aria-label="University of Szeged"><span class="education__studies">University of Szeged</span></a>
-                                    <span class="education__year">2015 - 2017</span>
-                                </div>
-                            </div>
-                            <div class="education__content">
-                                <div class="education__time">
-                                    <span class="education__rounder"></span>
-                                </div>
-                                <div class="education__data bd-grid">
-                                    <h3 class="education__title">GEOGRAPHY (GEOINFORMATICS)</h3>
-                                    <a href="https://u-szeged.hu/english" target="_blank" aria-label="University of Szeged"><span class="education__studies">University of Szeged</span></a>
-                                    <span class="education__year">2011 - 2015</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="skills section" id="skills">
-                        <h2 class="section-title">Skills</h2>
-                        <div class="skills__content bd-grid">
-                            <ul class="skills__data">
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> HTML
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> CSS
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> <a href="https://sass-lang.com/" target="_blank">Sass</a>
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> JavaScript
-                                </li>
-								<li class="skills__name">
-                                    <span class="skills__circle"></span> <a href="https://flutter.dev/" target="_blank">Flutter</a>
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> <a href="https://firebase.google.com/" target="_blank">Firebase</a>
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> <a href="https://parceljs.org/" target="_blank">Parcel</a>
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> <a href="https://react.dev/" target="_blank">React</a>
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> <a href="https://nestjs.com/" target="_blank">Nest.js</a>
-                                </li>
-                            </ul>
-                            <ul class="skills__data">
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> <a href="https://vuejs.org/" target="_blank">Vue.js</a>
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> <a href="https://wordpress.com/" target="_blank">WordPress</a>
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> PHP
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> <a href="https://laravel.com/" target="_blank">Laravel</a>
-                                </li>
-								<li class="skills__name">
-                                    <span class="skills__circle"></span> <a href="https://www.yiiframework.com/" target="_blank">Yii2</a>
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> <a href="https://www.docker.com/" target="_blank">Docker</a>
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> <a href="https://nodejs.org/en/" target="_blank">Node.js</a>
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> <a href="https://nextjs.org/" target="_blank">Next.js</a>
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> <a href="https://www.prisma.io/" target="_blank">Prisma</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                </div>
-                <div class="resume__right">
-                    <section class="experience section" id="experience">
-                        <h2 class="section-title">Experience</h2>
-                        <div class="experience__container bd-grid">
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">Frontend - Backend developer</h3>
-                                    <span class="experience__company">2017 - | <a href="https://evista.hu/" target="_blank" aria-label="Evista Kft.">Evista Kft.</a></span>
-                                    <p class="experience__description">As an experienced developer I perform complex tasks independently. I am also involved in backend and frontend development ranging from webshops, websites to full - blown web applications. Additionally I create and document advanced REST APIs and integrate my own or third - party APIs. My work also includes optimizing existing Frontend, Backend systems and developing PHP (Laravel, Yii2) based microservices and React, Vue microfrontend or Flutter cross - platform mobile app.</p>
-                                </div>
-                            </div>
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                </div>
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">Geoinformatics</h3>
-                                    <span class="experience__company">2015 - 2016 | <a href="https://geodezia-zrt.webnode.hu/" target="_blank" aria-label="Geodezia Zrt">Geodezia Zrt</a></span>
-                                    <p class="experience__description">Geospatial data processing (CAD, GIS). Processing of utility (electricity, telecommunications) industrial data. Database management (.xlsx, .dbf, .mdb). Independent data analysis and data update tasks solution. Participation in research and development tasks. Carrying out measurements in the field.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="project section" id="projects">
-                        <h2 class="section-title">Projects</h2>
-                        <div class="project__container bd-grid">
-                            <div class="project__content">
-                                <h3 class="project__title">2024 - 2026 | <a href="https://app.compera.no/login" target="_blank" aria-label="Compera">Compera</a></h3>
-                                <p class="project__description">
-                                    In the Compera project, I was responsible for frontend development using Next.js, while also contributing to backend development with Nest.js and GraphQL. The goal was to create a platform that simplifies sustainability reporting for companies across their entire supply chain. From the very beginning, I was involved in the development process, from the initial concept to the creation of the prototype and MVP. On the frontend, I built a fast and user-friendly interface, while on the backend, I developed a scalable and reliable system that ensures efficient data management and GraphQL-based communication. Throughout the project, I worked closely with the team to deliver a stable and well-functioning platform.
-                                </p>
-                            </div>
-                            <div class="project__content">
-                                <h3 class="project__title">2023 - 2024 | <a href="https://www.indykite.com/" target="_blank" aria-label="IndyKite Loyalty App">IndyKite Loyalty App</a></h3>
-                                <p class="project__description">
-                                    I have built a commercial loyalty demo app where companies – shops – can create their own loyalty network with the help of IndyKite’s identity platform. For registration I not just build a standard registration process but successfully integrated Google Sign In service to ease users way to the system. Company users have the opportunity to invite users to their shops and invited individuals get a code to enter while registration to connect with the network. I have developed a full e-commerce flow including cart and with integration of online payment services. Shop owners can administer their users, products and orders.
-                                </p>
-                            </div>
-                            <div class="project__content">
-                                <h3 class="project__title">2022 - 2023 | <a href="https://chainflow.nl/" target="_blank" aria-label="ChainFlow CRM">ChainFlow CRM</a></h3>
-                                <p class="project__description">
-                                    I used Laravel PHP framework for the Backend and developed the Frontend with native javascript. The business intelligence built in the system ensures that the successive processes are completed and the required documents are generated and filled - in with appropriate information to allow professionals to track the project status. For the easy handling of the nearly 9.000 products and materials we use data tables in javascript that allows users to overview and search the company stocks.
-                                </p>
-                            </div>
-                            <div class="project__content">
-                                <h3 class="project__title">2022 - 2023 | <a href="https://hasznaltautoszegeden.hu/" target="_blank" aria-label="Trend Auto Szeged">Trend Auto Szeged</a></h3>
-                                <p class="project__description">Trend Auto Szeged is a family company dealing in used car trading. My task was to design and develop the UI and UX of the hasznaltautoszegeden.hu website.</p>
-                            </div>
-                            <div class="project__content">
-                                <h3 class="project__title">2021 - 2026 | <a href="https://partner.podiart.com/" target="_blank" aria-label="Podiart">Podiart</a></h3>
-                                <p class="project__description">We transformed an existing medical software for Podiart Kft. into a modern, browser-based application built on PHP using the Yii2 framework. The new version enables instrumental foot analysis, 3D modeling, and the design and production of custom insoles. These insoles are effective in treating various orthopedic conditions. The development is ongoing, with continuous improvements and expansions to provide even more efficient solutions for users.</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="languages section">
-                        <h2 class="section-title">Languages</h2>
-                        <div class="languages__container">
-                            <ul class="languages__content bd-grid">
-                                <li class="languages__name">
-                                    <span class="languages__circle"></span> Hungary
-                                </li>
-                                <li class="languages__name">
-                                    <span class="languages__circle"></span> English
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section class="certificate section" id="certificates">
-                        <h2 class="section-title">Certificate</h2>
-                        <div class="certificate__container bd-grid">
-                            <div class="certificate__content">
-                                <h3 class="certificate__title">Civil drones (unmanned aircraft) certificate (2022)</h3>
-                                <p class="certificate__description">EU Regulations 2019/947 and 2019/945 set out the framework for the safe operation of civil drones in the European skies. They adopt a risk - based approach, and as such, do not distinguish between leisure or commercial civil drone activities.</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="interests section" id="interests">
-                        <h2 class="section-title">Interests</h2>
-                        <div class="interests__container bd-grid">
-                            <div class="interests__content">
-                                <i class="ri-customer-service-fill interests__icon"></i>
-                                <span class="interests__name">Music</span>
-                            </div>
-                            <div class="interests__content">
-                                <i class="ri-plane-fill interests__icon"></i>
-                                <span class="interests__name">Travel</span>
-                            </div>
-                            <div class="interests__content">
-                                <i class="ri-book-2-fill interests__icon"></i>
-                                <span class="interests__name">Read</span>
-                            </div>
-                            <div class="interests__content">
-                                <i class="ri-run-fill interests__icon"></i>
-                                <span class="interests__name">Running</span>
-                            </div>
-							<div class="interests__content">
-                                <i class="ri-organization-chart interests__icon"></i>
-                                <span class="interests__name">Drone</span>
-                            </div>
-							<div class="interests__content">
-                                <i class="ri-route-fill interests__icon"></i>
-                                <span class="interests__name">Trip</span>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="qrcode section">
-                        <a id="qr_code"></a>
-                    </section>
-                </div>
-            </div>        
-        </main>
-        <a href="#home" class="scrolltop" id="scroll-top">
-            <i class="ri-arrow-up-line scrolltop__icon"></i>
-        </a>
-        <span class="copyright-text">Copyright © 2026<a href="https://github.com/szelepke/" target="_blank">&nbsp;Zsolt Szelepcsényi&nbsp;</a> all rights reserved</span>
-        <script src="dist/main.js"></script>
-    </body>
+                            <p class="timeline__meta">
+                                <a href="https://www.aventail.hu/" target="_blank" rel="noopener" class="link link--strong">Aventail</a>
+                                <span class="timeline__date" data-i18n="exp.aventail.date">Apr 2026 – Present</span>
+                            </p>
+                            <p class="timeline__description" data-i18n="exp.aventail.text">
+                                Full stack development of custom business systems at a Szeged-based software company that builds enterprise platforms - CRM, ERP, B2B and high-traffic web solutions - for clients across Hungary and the EU. I work end to end, from system design and third-party integrations through APIs to the user interface, on client projects such as Agropark.
+                            </p>
+                        </li>
+                        <li class="timeline__item" data-reveal>
+                            <span class="timeline__dot" aria-hidden="true"></span>
+                            <h3 class="timeline__title" data-i18n="exp.evista.title">Frontend – Backend Developer</h3>
+                            <p class="timeline__meta">
+                                <a href="https://evista.hu/" target="_blank" rel="noopener" class="link link--strong">Evista Kft.</a>
+                                <span class="timeline__date">2017 – 2026</span>
+                            </p>
+                            <p class="timeline__description" data-i18n="exp.evista.text">
+                                Independently delivered complex tasks across backend and frontend, from webshops and websites to full-blown web applications. Designed and documented REST APIs and integrated in-house and third-party services. Optimized existing systems and built PHP (Laravel, Yii2) microservices, React and Vue micro-frontends, and Flutter cross-platform mobile apps.
+                            </p>
+                        </li>
+                        <li class="timeline__item" data-reveal>
+                            <span class="timeline__dot" aria-hidden="true"></span>
+                            <h3 class="timeline__title" data-i18n="exp.geo.title">Geoinformatics</h3>
+                            <p class="timeline__meta">
+                                <a href="https://geodezia-zrt.webnode.hu/" target="_blank" rel="noopener" class="link link--strong">Geodézia Zrt.</a>
+                                <span class="timeline__date">2015 – 2016</span>
+                            </p>
+                            <p class="timeline__description" data-i18n="exp.geo.text">
+                                Geospatial data processing (CAD, GIS) of utility network data (electricity, telecommunications). Database management (.xlsx, .dbf, .mdb), independent data analysis and update tasks, participation in R&amp;D work and field measurements.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+
+                <!--========== PROJECTS ==========-->
+                <section class="project section" id="projects">
+                    <h2 class="section-title" data-reveal data-i18n="section.projects">Projects</h2>
+                    <div class="project__container">
+                        <article class="card" data-reveal>
+                            <header class="card__head">
+                                <h3 class="card__title"><a href="https://agropark.hu/" target="_blank" rel="noopener">Agropark<i class="ri-arrow-right-up-line card__arrow" aria-hidden="true"></i></a></h3>
+                                <span class="card__date" data-i18n="proj.present">2026 – Present</span>
+                            </header>
+                            <p class="card__description" data-i18n="proj.agropark">
+                                Agropark sells new and used agricultural and construction machinery. As a full stack developer at Aventail I work on the platform behind their sales: a unified marketing, CRM and lead tracking system that brings inquiries from the website, ad campaigns and machinery marketplaces into one place, so the sales team can follow every lead from first contact to closed deal.
+                            </p>
+                            <ul class="tags"><li>Full stack</li><li>CRM</li><li data-i18n="tag.leads">Lead tracking</li><li data-i18n="tag.integrations">Integrations</li></ul>
+                        </article>
+                        <article class="card" data-reveal>
+                            <header class="card__head">
+                                <h3 class="card__title"><a href="https://app.compera.no/login" target="_blank" rel="noopener">Compera<i class="ri-arrow-right-up-line card__arrow" aria-hidden="true"></i></a></h3>
+                                <span class="card__date">2024 – 2026</span>
+                            </header>
+                            <p class="card__description" data-i18n="proj.compera">
+                                A platform that simplifies sustainability reporting for companies across their entire supply chain. I owned frontend development in Next.js and contributed to the Nest.js / GraphQL backend, taking the product from initial concept through prototype to MVP - a fast, user-friendly interface on top of a scalable, reliable data layer.
+                            </p>
+                            <ul class="tags"><li>Next.js</li><li>Nest.js</li><li>GraphQL</li></ul>
+                        </article>
+                        <article class="card" data-reveal>
+                            <header class="card__head">
+                                <h3 class="card__title"><a href="https://www.indykite.com/" target="_blank" rel="noopener">IndyKite Loyalty App<i class="ri-arrow-right-up-line card__arrow" aria-hidden="true"></i></a></h3>
+                                <span class="card__date">2023 – 2024</span>
+                            </header>
+                            <p class="card__description" data-i18n="proj.indykite">
+                                A commercial loyalty demo where shops build their own loyalty network on IndyKite’s identity platform. I built the registration flow with Google Sign-In and invite codes, a full e-commerce flow with cart and online payment integration, and admin tools for managing users, products and orders.
+                            </p>
+                            <ul class="tags"><li data-i18n="tag.identity">Identity</li><li data-i18n="tag.ecommerce">E-commerce</li><li data-i18n="tag.payments">Payments</li></ul>
+                        </article>
+                        <article class="card" data-reveal>
+                            <header class="card__head">
+                                <h3 class="card__title"><a href="https://chainflow.nl/" target="_blank" rel="noopener">ChainFlow CRM<i class="ri-arrow-right-up-line card__arrow" aria-hidden="true"></i></a></h3>
+                                <span class="card__date">2022 – 2023</span>
+                            </header>
+                            <p class="card__description" data-i18n="proj.chainflow">
+                                A CRM with built-in business logic that drives successive processes to completion and generates the required documents, so professionals can track project status. Laravel backend and native JavaScript frontend, with data tables for browsing and searching nearly 9,000 products and materials.
+                            </p>
+                            <ul class="tags"><li>Laravel</li><li>JavaScript</li></ul>
+                        </article>
+                        <article class="card" data-reveal>
+                            <header class="card__head">
+                                <h3 class="card__title"><a href="https://partner.podiart.com/" target="_blank" rel="noopener">Podiart<i class="ri-arrow-right-up-line card__arrow" aria-hidden="true"></i></a></h3>
+                                <span class="card__date">2021 – 2026</span>
+                            </header>
+                            <p class="card__description" data-i18n="proj.podiart">
+                                Transformed an existing medical desktop application into a modern browser-based system on PHP / Yii2. It supports instrumental foot analysis, 3D modelling, and the design and production of custom orthopedic insoles, and was continuously extended over five years of development.
+                            </p>
+                            <ul class="tags"><li>PHP</li><li>Yii2</li><li>3D</li></ul>
+                        </article>
+                        <article class="card" data-reveal>
+                            <header class="card__head">
+                                <h3 class="card__title"><a href="https://hasznaltautoszegeden.hu/" target="_blank" rel="noopener">Trend Auto Szeged<i class="ri-arrow-right-up-line card__arrow" aria-hidden="true"></i></a></h3>
+                                <span class="card__date">2022 – 2023</span>
+                            </header>
+                            <p class="card__description" data-i18n="proj.trendauto">
+                                UI/UX design and development of hasznaltautoszegeden.hu for a family-owned used car dealership.
+                            </p>
+                            <ul class="tags"><li>UI/UX</li><li>Web</li></ul>
+                        </article>
+                    </div>
+                </section>
+
+                <!--========== CERTIFICATES ==========-->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title" data-reveal data-i18n="section.certificates">Certificates</h2>
+                    <div class="certificate__item" data-reveal>
+                        <h3 class="certificate__title"><span data-i18n="cert.drone.title">EU civil drone (UAS) certificate</span> <span class="card__date">2022</span></h3>
+                        <p class="certificate__description" data-i18n="cert.drone.text">Operation of unmanned aircraft under EU Regulations 2019/947 and 2019/945, the risk-based framework for safe civil drone operations in European airspace.</p>
+                    </div>
+                </section>
+
+                <!--========== INTERESTS ==========-->
+                <section class="interests section" id="interests">
+                    <h2 class="section-title" data-reveal data-i18n="section.interests">Interests</h2>
+                    <ul class="interests__container">
+                        <li class="interests__content" data-reveal><i class="ri-headphone-line interests__icon" aria-hidden="true"></i><span data-i18n="int.music">Music</span></li>
+                        <li class="interests__content" data-reveal><i class="ri-plane-line interests__icon" aria-hidden="true"></i><span data-i18n="int.travel">Travel</span></li>
+                        <li class="interests__content" data-reveal><i class="ri-book-open-line interests__icon" aria-hidden="true"></i><span data-i18n="int.reading">Reading</span></li>
+                        <li class="interests__content" data-reveal><i class="ri-run-line interests__icon" aria-hidden="true"></i><span data-i18n="int.running">Running</span></li>
+                        <li class="interests__content" data-reveal><i class="ri-flight-takeoff-line interests__icon" aria-hidden="true"></i><span data-i18n="int.drones">Drones</span></li>
+                        <li class="interests__content" data-reveal><i class="ri-route-line interests__icon" aria-hidden="true"></i><span data-i18n="int.roadtrips">Road trips</span></li>
+                    </ul>
+                </section>
+
+                <section class="qrcode section" data-reveal>
+                    <a href="card/" class="qrcode__button" id="qr_code" aria-label="Open my digital business card" data-tooltip="Digital business card" data-i18n-attr="aria-label:qr.aria,data-tooltip:qr.tooltip"><span class="qrcode__svg"></span></a>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#home" class="scrolltop" id="scroll-top" aria-label="Back to top" data-i18n-attr="aria-label:scrolltop">
+        <i class="ri-arrow-up-line" aria-hidden="true"></i>
+    </a>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <footer class="footer">
+        © <span id="year">2026</span> <a href="https://github.com/szelepke/" target="_blank" rel="noopener" class="link" data-i18n="footer.name">Zsolt Szelepcsényi</a>. <span data-i18n="footer.rights">All rights reserved.</span>
+    </footer>
+
+    <script src="dist/main.js"></script>
+</body>
 </html>

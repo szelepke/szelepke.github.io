@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Zsolt Szelepcsényi - Business card</title>
+    <meta name="description" content="Digital business card of Zsolt Szelepcsényi, full stack developer. Save the contact in one tap.">
+    <meta name="author" content="Zsolt Szelepcsényi">
+    <link rel="canonical" href="https://szelepke.github.io/card/">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Zsolt Szelepcsényi - Full Stack Developer">
+    <meta property="og:description" content="Digital business card. Save the contact in one tap.">
+    <meta property="og:url" content="https://szelepke.github.io/card/">
+    <meta property="og:image" content="https://szelepke.github.io/assets/img/zsolt_szelepcsenyi.webp">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+    <script>
+        (function () {
+            var root = document.documentElement;
+            try {
+                var saved = localStorage.getItem('selected-theme');
+                var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+                root.setAttribute('data-theme', dark ? 'dark' : 'light');
+            } catch (e) { root.setAttribute('data-theme', 'light'); }
+            var lang = 'en';
+            try {
+                var q = new URLSearchParams(location.search).get('lang');
+                var s = localStorage.getItem('lang');
+                var nav = (navigator.languages || [navigator.language || '']).join(',').toLowerCase();
+                lang = q === 'hu' || q === 'en' ? q : s === 'hu' || s === 'en' ? s : /(^|,)hu/.test(nav) ? 'hu' : 'en';
+            } catch (e) {}
+            if (lang === 'hu') {
+                root.lang = 'hu';
+                root.classList.add('i18n-pending');
+                setTimeout(function () { root.classList.remove('i18n-pending'); }, 1500);
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../dist/card/card.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+</head>
+<body data-page="card">
+    <div class="bg" aria-hidden="true"><span class="bg__glow bg__glow--1"></span><span class="bg__glow bg__glow--2"></span></div>
+
+    <header class="topbar">
+        <a href="../" class="topbar__back" data-i18n-attr="aria-label:card.backAria" aria-label="Back to the CV">
+            <i class="ri-arrow-left-line" aria-hidden="true"></i><span data-i18n="card.cv">CV</span>
+        </a>
+        <div class="topbar__actions">
+            <button type="button" class="icon-button theme-toggle" id="theme-button" aria-label="Toggle dark mode" data-i18n-attr="aria-label:toolbar.themeAria">
+                <i class="ri-moon-line theme-toggle__moon" aria-hidden="true"></i>
+                <i class="ri-sun-line theme-toggle__sun" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="icon-button lang-toggle" id="lang-button" aria-label="Magyar nyelvű változat">
+                <span class="lang-toggle__label" lang="hu">HU</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="stage">
+        <!--========== THE CARD (front + back) ==========-->
+        <div class="bizcard-wrap">
+            <button type="button" class="bizcard" id="bizcard" aria-label="Flip card" data-i18n-attr="aria-label:card.flipAria" aria-pressed="false">
+                <span class="bizcard__inner">
+                    <span class="bizcard__face bizcard__face--front">
+                        <span class="bizcard__shine" aria-hidden="true"></span>
+                        <span class="bizcard__top">
+                            <img src="../assets/img/zsolt_szelepcsenyi.webp" alt="" class="bizcard__photo" width="56" height="56">
+                        </span>
+                        <span class="bizcard__id">
+                            <span class="bizcard__name" data-i18n-html="home.name">Zsolt <b>Szelepcsényi</b></span>
+                            <span class="bizcard__title" data-i18n="home.profession">Full Stack Developer</span>
+                        </span>
+                        <span class="bizcard__meta">
+                            <span><i class="ri-mail-line" aria-hidden="true"></i>szelepcsenyi.zsolt@gmail.com</span>
+                            <span><i class="ri-global-line" aria-hidden="true"></i>szelepke.github.io</span>
+                        </span>
+                    </span>
+                    <span class="bizcard__face bizcard__face--back" aria-hidden="true">
+                        <span class="bizcard__qr" data-qr></span>
+                        <span class="bizcard__back-text">
+                            <span class="bizcard__back-name" data-i18n="footer.name">Zsolt Szelepcsényi</span>
+                            <span class="bizcard__back-hint"><i class="ri-qr-scan-2-line" aria-hidden="true"></i><span data-i18n="card.scan">Scan to save my contact</span></span>
+                        </span>
+                    </span>
+                </span>
+            </button>
+            <p class="bizcard-hint"><i class="ri-hand" aria-hidden="true"></i><span data-i18n="card.tapHint">Tap the card to flip it</span></p>
+        </div>
+
+        <!--========== ACTIONS ==========-->
+        <div class="actions">
+            <a class="button button--primary" href="../zsolt_szelepcsenyi.vcf" download="zsolt_szelepcsenyi.vcf" id="save-contact">
+                <i class="ri-user-add-line" aria-hidden="true"></i><span data-i18n="card.save">Save contact</span>
+            </a>
+            <button type="button" class="button button--ghost" id="share-button">
+                <i class="ri-share-forward-line" aria-hidden="true"></i><span data-i18n="card.share">Share</span>
+            </button>
+        </div>
+
+        <ul class="links">
+            <li>
+                <a class="links__item" href="mailto:szelepcsenyi.zsolt@gmail.com">
+                    <span class="links__icon"><i class="ri-mail-line" aria-hidden="true"></i></span>
+                    <span class="links__text"><span class="links__label">E-mail</span>szelepcsenyi.zsolt@gmail.com</span>
+                    <i class="ri-arrow-right-up-line links__arrow" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a class="links__item" href="https://www.linkedin.com/in/zsolt-szelepcs%C3%A9nyi-811a511a2/" target="_blank" rel="noopener">
+                    <span class="links__icon"><i class="ri-linkedin-box-line" aria-hidden="true"></i></span>
+                    <span class="links__text"><span class="links__label">LinkedIn</span>zsolt-szelepcsenyi</span>
+                    <i class="ri-arrow-right-up-line links__arrow" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a class="links__item" href="https://github.com/szelepke" target="_blank" rel="noopener">
+                    <span class="links__icon"><i class="ri-github-line" aria-hidden="true"></i></span>
+                    <span class="links__text"><span class="links__label">GitHub</span>szelepke</span>
+                    <i class="ri-arrow-right-up-line links__arrow" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a class="links__item" href="../">
+                    <span class="links__icon"><i class="ri-file-user-line" aria-hidden="true"></i></span>
+                    <span class="links__text"><span class="links__label" data-i18n="card.cvLabel">Resume</span><span data-i18n="card.cvText">Experience, projects, skills</span></span>
+                    <i class="ri-arrow-right-line links__arrow" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+
+        <!--========== NFC WRITER (owner only: open with ?nfc) ==========-->
+        <section class="nfc" id="nfc" hidden>
+            <h2 class="nfc__title"><i class="ri-rfid-line" aria-hidden="true"></i><span data-i18n="nfc.title">Write NFC tag</span></h2>
+            <p class="nfc__text" data-i18n="nfc.intro">Program a blank NFC sticker or card (NTAG213/215/216). Works in Chrome on Android.</p>
+
+            <fieldset class="nfc__modes">
+                <legend class="sr-only" data-i18n="nfc.modeLegend">What to write</legend>
+                <label class="nfc__mode">
+                    <input type="radio" name="nfc-mode" value="vcard" checked>
+                    <span><b data-i18n="nfc.modeVcard">Contact card (with phone)</b><small data-i18n="nfc.modeVcardHint">Android adds the contact directly. iPhones may not open it.</small></span>
+                </label>
+                <label class="nfc__mode">
+                    <input type="radio" name="nfc-mode" value="url">
+                    <span><b data-i18n="nfc.modeUrl">Link to this page</b><small data-i18n="nfc.modeUrlHint">Works on every phone, but without the phone number.</small></span>
+                </label>
+            </fieldset>
+
+            <label class="nfc__field" id="nfc-phone-field">
+                <span data-i18n="nfc.phone">Phone number</span>
+                <input type="tel" id="nfc-phone" inputmode="tel" autocomplete="tel" placeholder="+36 30 123 4567">
+                <small data-i18n="nfc.phoneHint">Only stored on this device, never published.</small>
+            </label>
+
+            <p class="nfc__size" id="nfc-size" aria-live="polite"></p>
+            <button type="button" class="button button--primary nfc__write" id="nfc-write">
+                <i class="ri-rfid-line" aria-hidden="true"></i><span data-i18n="nfc.write">Write to tag</span>
+            </button>
+            <p class="nfc__status" id="nfc-status" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="../dist/card/card.js"></script>
+</body>
+</html>
